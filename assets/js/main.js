@@ -1,6 +1,10 @@
 const themeStorageKey = "klpt-site-theme";
 const colorModeStorageKey = "klpt-site-color-mode";
 
+function normalizeTheme(theme) {
+  return theme === "editorial" ? "coastal" : theme;
+}
+
 const navigation = [
   { id: "home", label: "Home", href: "index.html" },
   {
@@ -124,10 +128,13 @@ function renderFooter() {
         </div>
         <div>
           <strong>Use the style switcher</strong>
-          <p>Compare playful, corporate, and editorial directions while keeping the same content architecture.</p>
+          <p>Compare playful, corporate, and coastal directions while keeping the same content architecture.</p>
         </div>
       </div>
     </div>
+    <button class="back-to-top" type="button" aria-label="Back to top">
+      <span class="back-to-top__icon" aria-hidden="true">↑</span>
+    </button>
   `;
 }
 
@@ -147,9 +154,10 @@ function mountComponents() {
 
 function initThemeSelect() {
   const themeSelect = document.querySelector("#theme-select");
-  const storedTheme = window.localStorage.getItem(themeStorageKey) || "sunrise";
+  const storedTheme = normalizeTheme(window.localStorage.getItem(themeStorageKey) || "sunrise");
 
   document.body.dataset.theme = storedTheme;
+  window.localStorage.setItem(themeStorageKey, storedTheme);
 
   if (!themeSelect) {
     return;
@@ -256,7 +264,28 @@ function initNavigation() {
   });
 }
 
+function initBackToTop() {
+  const backToTopButton = document.querySelector(".back-to-top");
+
+  if (!backToTopButton) {
+    return;
+  }
+
+  function syncBackToTopVisibility() {
+    const isVisible = window.scrollY > 280;
+    backToTopButton.classList.toggle("is-visible", isVisible);
+  }
+
+  backToTopButton.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  window.addEventListener("scroll", syncBackToTopVisibility, { passive: true });
+  syncBackToTopVisibility();
+}
+
 mountComponents();
 initColorModeToggle();
 initThemeSelect();
 initNavigation();
+initBackToTop();
