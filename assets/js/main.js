@@ -12,8 +12,8 @@ const navigation = [
     label: "Foundations",
     href: "foundations.html",
     children: [
-      { label: "Quality Observations", href: "foundations.html#quality-observations" },
-      { label: "Analysing Data", href: "foundations.html#analysing-data" },
+      { label: "Quality Observations", href: "quality-observations.html" },
+      { label: "Analysing Data", href: "analysing-data.html" },
     ],
   },
   {
