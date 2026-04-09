@@ -1,4 +1,5 @@
 const themeStorageKey = "klpt-site-theme";
+const colorModeStorageKey = "klpt-site-color-mode";
 
 const navigation = [
   { id: "home", label: "Home", href: "index.html" },
@@ -67,21 +68,37 @@ function renderHeader(currentPage) {
   return `
     <nav class="topbar" aria-label="Primary">
       <a class="brand" href="index.html">
-        <span class="brand__mark">KLPT</span>
+        <span class="brand__mark">
+          <img src="assets/img/klpt-logo.png" alt="KLPT logo" />
+        </span>
         <span class="brand__text">Learning in motion</span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-        <span class="nav-toggle__line"></span>
-        <span class="nav-toggle__line"></span>
-        <span class="nav-toggle__line"></span>
-        <span class="sr-only">Toggle navigation</span>
-      </button>
+      <div class="nav-cluster">
+        <div class="nav-panel" id="site-nav">
+          <ul class="nav-list">
+            ${navItems}
+          </ul>
+        </div>
 
-      <div class="nav-panel" id="site-nav">
-        <ul class="nav-list">
-          ${navItems}
-        </ul>
+        <div class="nav-utilities">
+          <button
+            class="mode-toggle"
+            type="button"
+            aria-pressed="false"
+            aria-label="Switch to dark mode"
+          >
+            <span class="mode-toggle__icon" aria-hidden="true">◐</span>
+            <span class="mode-toggle__label">Dark mode</span>
+          </button>
+
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+            <span class="nav-toggle__line"></span>
+            <span class="nav-toggle__line"></span>
+            <span class="nav-toggle__line"></span>
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+        </div>
       </div>
     </nav>
   `;
@@ -146,6 +163,47 @@ function initThemeSelect() {
   });
 }
 
+function initColorModeToggle() {
+  const modeToggle = document.querySelector(".mode-toggle");
+  const storedMode = window.localStorage.getItem(colorModeStorageKey);
+  const preferredMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  const activeMode = storedMode || preferredMode;
+
+  function applyColorMode(mode) {
+    const isDark = mode === "dark";
+    const icon = modeToggle?.querySelector(".mode-toggle__icon");
+    const label = modeToggle?.querySelector(".mode-toggle__label");
+
+    document.body.dataset.colorMode = mode;
+
+    if (modeToggle) {
+      modeToggle.setAttribute("aria-pressed", String(isDark));
+      modeToggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+    }
+
+    if (icon) {
+      icon.textContent = isDark ? "◑" : "◐";
+    }
+
+    if (label) {
+      label.textContent = isDark ? "Light mode" : "Dark mode";
+    }
+  }
+
+  applyColorMode(activeMode);
+
+  if (!modeToggle) {
+    return;
+  }
+
+  modeToggle.addEventListener("click", () => {
+    const currentMode = document.body.dataset.colorMode === "dark" ? "dark" : "light";
+    const nextMode = currentMode === "dark" ? "light" : "dark";
+    applyColorMode(nextMode);
+    window.localStorage.setItem(colorModeStorageKey, nextMode);
+  });
+}
+
 function initNavigation() {
   const navToggle = document.querySelector(".nav-toggle");
   const navPanel = document.querySelector(".nav-panel");
@@ -199,5 +257,6 @@ function initNavigation() {
 }
 
 mountComponents();
+initColorModeToggle();
 initThemeSelect();
 initNavigation();
