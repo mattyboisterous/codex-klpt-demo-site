@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">Language and Literacy icon</title>
+  <desc id="desc">Cartoony speech bubble and book icon.</desc>
+  <rect width="240" height="240" rx="40" fill="#FFE7C2"/>
+  <circle cx="78" cy="74" r="34" fill="#FF8A5B"/>
+  <path d="M122 54h50c16 0 28 12 28 28s-12 28-28 28h-16l-20 14v-14h-14c-16 0-28-12-28-28s12-28 28-28Z" fill="#FFFFFF"/>
+  <rect x="48" y="116" width="144" height="78" rx="16" fill="#FFFFFF"/>
+  <path d="M72 116c20 0 32 10 48 10s28-10 48-10v78c-20 0-32 10-48 10s-28-10-48-10Z" fill="#FFD166"/>
+  <path d="M120 126v78" stroke="#FF8A5B" stroke-width="8" stroke-linecap="round"/>
+</svg>

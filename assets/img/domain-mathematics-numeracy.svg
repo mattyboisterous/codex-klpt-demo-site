@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">Mathematics and Numeracy icon</title>
+  <desc id="desc">Cartoony numbers and calculator icon.</desc>
+  <rect width="240" height="240" rx="40" fill="#E1E8FF"/>
+  <rect x="66" y="46" width="108" height="148" rx="22" fill="#FFFFFF"/>
+  <rect x="84" y="64" width="72" height="28" rx="10" fill="#1F5EFF"/>
+  <g fill="#C9D6FF">
+    <rect x="84" y="108" width="22" height="22" rx="6"/>
+    <rect x="109" y="108" width="22" height="22" rx="6"/>
+    <rect x="134" y="108" width="22" height="22" rx="6"/>
+    <rect x="84" y="136" width="22" height="22" rx="6"/>
+    <rect x="109" y="136" width="22" height="22" rx="6"/>
+    <rect x="134" y="136" width="22" height="22" rx="6"/>
+  </g>
+  <text x="40" y="78" font-size="32" font-family="Open Sans, Arial, sans-serif" fill="#1F5EFF" font-weight="700">+</text>
+  <text x="182" y="88" font-size="38" font-family="Open Sans, Arial, sans-serif" fill="#FF8A5B" font-weight="700">2</text>
+  <text x="34" y="160" font-size="34" font-family="Open Sans, Arial, sans-serif" fill="#1C9A8D" font-weight="700">1</text>
+</svg>

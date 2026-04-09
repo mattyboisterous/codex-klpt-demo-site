@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">Executive Function icon</title>
+  <desc id="desc">Cartoony checklist and spark icon.</desc>
+  <rect width="240" height="240" rx="40" fill="#DDF4F7"/>
+  <rect x="56" y="46" width="128" height="148" rx="20" fill="#FFFFFF"/>
+  <rect x="88" y="32" width="64" height="28" rx="12" fill="#0F8C95"/>
+  <path d="M84 92l10 10 18-20" fill="none" stroke="#0F8C95" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M84 132l10 10 18-20" fill="none" stroke="#0F8C95" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M84 172l10 10 18-20" fill="none" stroke="#0F8C95" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M132 90h34M132 130h34M132 170h34" stroke="#A7C9CE" stroke-width="8" stroke-linecap="round"/>
+  <path d="m188 58 8 14 16 4-12 10 2 16-14-8-14 8 2-16-12-10 16-4Z" fill="#FFD166"/>
+</svg>

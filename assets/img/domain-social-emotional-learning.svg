@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">Social and Emotional Learning icon</title>
+  <desc id="desc">Cartoony heart and smiling faces.</desc>
+  <rect width="240" height="240" rx="40" fill="#FFE1E8"/>
+  <circle cx="84" cy="90" r="32" fill="#FFFFFF"/>
+  <circle cx="156" cy="90" r="32" fill="#FFFFFF"/>
+  <circle cx="74" cy="84" r="4" fill="#D9485F"/>
+  <circle cx="94" cy="84" r="4" fill="#D9485F"/>
+  <circle cx="146" cy="84" r="4" fill="#D9485F"/>
+  <circle cx="166" cy="84" r="4" fill="#D9485F"/>
+  <path d="M74 100c6 8 14 12 20 12s14-4 20-12" fill="none" stroke="#D9485F" stroke-width="6" stroke-linecap="round"/>
+  <path d="M146 100c6 8 14 12 20 12s14-4 20-12" fill="none" stroke="#D9485F" stroke-width="6" stroke-linecap="round"/>
+  <path d="M120 186s-42-24-42-54c0-16 12-28 28-28 8 0 14 4 14 4s6-4 14-4c16 0 28 12 28 28 0 30-42 54-42 54Z" fill="#FF7A90"/>
+</svg>

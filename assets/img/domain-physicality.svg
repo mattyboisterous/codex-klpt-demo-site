@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">Physicality icon</title>
+  <desc id="desc">Cartoony movement figure and ball.</desc>
+  <rect width="240" height="240" rx="40" fill="#E7F7D7"/>
+  <circle cx="122" cy="64" r="20" fill="#1C9A8D"/>
+  <path d="M122 88v34l28 20" fill="none" stroke="#1C9A8D" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M122 104l-34 22" fill="none" stroke="#1C9A8D" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M122 122l-20 42" fill="none" stroke="#1C9A8D" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M122 122l36 44" fill="none" stroke="#1C9A8D" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="64" cy="170" r="24" fill="#FFD166"/>
+  <path d="M50 156c14 16 28 28 28 28M78 156c-16 14-28 28-28 28" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+</svg>
