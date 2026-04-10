@@ -70,6 +70,10 @@ function renderHeader(currentPage) {
     .join("");
 
   return `
+    <div class="beta-banner" aria-label="Beta site notice">
+      <span class="beta-banner__desktop">Beta</span>
+      <span class="beta-banner__mobile">Beta</span>
+    </div>
     <nav class="topbar" aria-label="Primary">
       <a class="brand" href="index.html">
         <span class="brand__mark">
