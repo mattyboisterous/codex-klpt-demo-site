@@ -398,6 +398,14 @@ body[data-color-mode="dark"] .brand__logo--dark {
   color: var(--accent-deep);
   transform: translateY(-1px); }
 
+body[data-color-mode="dark"] .nav-list a:hover,
+body[data-color-mode="dark"] .nav-list a:focus-visible,
+body[data-color-mode="dark"] .submenu-toggle:hover,
+body[data-color-mode="dark"] .nav-list a.is-current,
+body[data-color-mode="dark"] .submenu-toggle:focus-visible {
+  background: rgba(143, 192, 255, 0.18);
+  color: #eef5f7; }
+
 .submenu {
   position: absolute;
   top: calc(100% + 10px);
