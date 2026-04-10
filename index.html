@@ -20,117 +20,73 @@
     <div class="site-shell">
       <header class="site-header hero">
         <div data-component="header"></div>
-        <section class="hero__content page-hero page-hero--home">
-          <div class="hero__copy">
-            <p class="eyebrow">Home</p>
-            <h1>Using the KLPT</h1>
-            <p class="hero__lede">
-              The KLPT site is designed to help first-time users understand the tool, the learning
-              domains, and the supporting resources, while still letting repeat users navigate
-              straight to the observation support content they need.
-            </p>
-            <div class="hero__actions">
-              <a class="button button--primary" href="tool.html">Go to the Tool</a>
-              <a class="button button--ghost" href="learning-domains.html">Browse Learning Domains</a>
-            </div>
-            <div class="theme-picker" aria-label="Style selector">
-              <label class="theme-picker__label" for="theme-select">Preview site style</label>
-              <select class="theme-picker__select" id="theme-select" name="theme-select">
-                <option value="sunrise">Playful Bright</option>
-                <option value="corporate">Corporate Clean</option>
-                <option value="coastal">Coastal Calm</option>
-              </select>
-            </div>
+        <section class="page-hero welcome-hero">
+          <div class="section-heading">
+            <h1>Welcome</h1>
           </div>
-
-          <aside class="hero__panel" aria-label="Using the KLPT video">
-            <div class="highlight-card">
-              <span class="highlight-card__label">Getting Started</span>
-              <h2>Watch the introduction to using the KLPT</h2>
-              <p>
-                A styled video block can lead first-time users into the tool and help them
-                understand the learning-domain structure before they choose where to go next.
-              </p>
-            </div>
-            <div class="video-embed video-embed--hero">
-              <iframe
-                src="https://www.youtube.com/embed/4ec7okyzRE4"
-                title="Using the KLPT video"
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <a class="inline-link" href="transcript.html">Read the transcript</a>
-          </aside>
+          <div class="welcome-hero__logo-wrap">
+            <img class="welcome-hero__logo" src="assets/img/klpt-logo.png" alt="KLPT logo" />
+          </div>
+          <p class="page-hero__lede welcome-hero__lede">
+            Start with the foundations behind the KLPT, or head straight to the learning domains and
+            observation tool.
+          </p>
+          <div class="theme-picker" aria-label="Style selector">
+            <label class="theme-picker__label" for="theme-select">Preview site style</label>
+            <select class="theme-picker__select" id="theme-select" name="theme-select">
+              <option value="sunrise">Playful Bright</option>
+              <option value="corporate">Corporate Clean</option>
+              <option value="coastal">Coastal Calm</option>
+            </select>
+          </div>
         </section>
       </header>
 
       <main>
         <section class="section">
-          <div class="domain-panel-grid">
-            <article class="domain-panel domain-panel--language">
-              <img class="domain-panel__art" src="assets/img/domain-language-literacy.svg" alt="Language and Literacy illustration" />
-              <h3>Language and Literacy</h3>
-              <p>Communication, expression, comprehension, and language-rich learning experiences.</p>
-              <a href="language-literacy.html">Open page</a>
+          <div class="content-grid">
+            <article class="resource-card resource-card--video">
+              <a class="video-thumb-link" href="https://www.youtube.com/watch?v=4ec7okyzRE4" target="_blank" rel="noreferrer">
+                <img
+                  class="video-thumb-image"
+                  src="https://img.youtube.com/vi/4ec7okyzRE4/hqdefault.jpg"
+                  alt="Thumbnail for About the KLPT"
+                />
+              </a>
+              <span class="resource-card__tag">Video</span>
+              <h3>About the KLPT</h3>
+              <p>An introductory clip that can help first-time users understand the overall purpose and structure of the toolkit.</p>
+              <a href="assets/docs/klpt-user-guide.pdf" target="_blank" rel="noreferrer">Klpt User Guide</a>
             </article>
-            <article class="domain-panel domain-panel--executive">
-              <img class="domain-panel__art" src="assets/img/domain-executive-function.svg" alt="Executive Function illustration" />
-              <h3>Executive Function</h3>
-              <p>Planning, focus, organisation, and the routines that support self-regulation.</p>
-              <a href="executive-function.html">Open page</a>
-            </article>
-            <article class="domain-panel domain-panel--social">
-              <img class="domain-panel__art" src="assets/img/domain-social-emotional-learning.svg" alt="Social and Emotional Learning illustration" />
-              <h3>Social and Emotional Learning</h3>
-              <p>Relationships, self-awareness, emotions, and the interpersonal side of learning.</p>
-              <a href="social-emotional-learning.html">Open page</a>
-            </article>
-            <article class="domain-panel domain-panel--physical">
-              <img class="domain-panel__art" src="assets/img/domain-physicality.svg" alt="Physicality illustration" />
-              <h3>Physicality</h3>
-              <p>Movement, coordination, physical confidence, and the embodied aspects of learning.</p>
-              <a href="physicality.html">Open page</a>
-            </article>
-            <article class="domain-panel domain-panel--maths">
-              <img class="domain-panel__art" src="assets/img/domain-mathematics-numeracy.svg" alt="Mathematics and Numeracy illustration" />
-              <h3>Mathematics and Numeracy</h3>
-              <p>Patterns, number sense, problem solving, and early mathematical understanding.</p>
-              <a href="mathematics-numeracy.html">Open page</a>
+            <article class="resource-card resource-card--video">
+              <a class="video-thumb-link" href="https://www.youtube.com/watch?v=BfW4mfKyF7Q" target="_blank" rel="noreferrer">
+                <img
+                  class="video-thumb-image"
+                  src="https://img.youtube.com/vi/BfW4mfKyF7Q/hqdefault.jpg"
+                  alt="Thumbnail for Acknowledgement of Country"
+                />
+              </a>
+              <span class="resource-card__tag">Video</span>
+              <h3>Acknowledgement of Country</h3>
+              <p>A dedicated panel like this gives important contextual content a clear and respectful place near the top of the homepage.</p>
+              <a href="https://www.youtube.com/watch?v=BfW4mfKyF7Q" target="_blank" rel="noreferrer">Watch on YouTube</a>
             </article>
           </div>
         </section>
 
-        <section class="section section--alt">
-          <div class="section-heading">
-            <p class="eyebrow">Find Out More</p>
-            <h2>Additional practical links for users who need more detail.</h2>
-          </div>
+        <section class="section">
           <div class="content-grid">
             <article class="feature-card">
-              <span class="pill">More</span>
-              <h3>Development</h3>
-              <p>Explain the developmental thinking and structure that sits behind the KLPT.</p>
-              <a href="development.html">Open development page</a>
+              <span class="pill">Start Here</span>
+              <h3>Foundations</h3>
+              <p>Explore the core ideas, observation approaches, and data interpretation content first.</p>
+              <a href="foundations.html">Open foundations</a>
             </article>
             <article class="feature-card">
-              <span class="pill">More</span>
-              <h3>Progressions</h3>
-              <p>Show how progress can be understood over time and how the platform supports that view.</p>
-              <a href="progressions.html">Open progressions page</a>
-            </article>
-            <article class="feature-card">
-              <span class="pill">More</span>
-              <h3>FAQ</h3>
-              <p>Answer common questions from educators, families, and first-time users.</p>
-              <a href="faq.html">Open FAQs</a>
-            </article>
-            <article class="feature-card">
-              <span class="pill">More</span>
-              <h3>Contact Us</h3>
-              <p>Provide a clear way for visitors to reach out when they need support or clarification.</p>
-              <a href="contact.html">Open contact page</a>
+              <span class="pill">Explore</span>
+              <h3>Learning domains and observation tool</h3>
+              <p>Move into the learning domains, supporting videos, and the KLPT tool pathways.</p>
+              <a href="tool.html">Open tool page</a>
             </article>
           </div>
         </section>

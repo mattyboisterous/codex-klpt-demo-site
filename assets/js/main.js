@@ -73,9 +73,18 @@ function renderHeader(currentPage) {
     <nav class="topbar" aria-label="Primary">
       <a class="brand" href="index.html">
         <span class="brand__mark">
-          <img src="assets/img/klpt-logo.png" alt="KLPT logo" />
+          <img
+            class="brand__logo brand__logo--light"
+            src="assets/img/Queensland_Government_logo_logotype.png"
+            alt="Queensland Government logo"
+          />
+          <img
+            class="brand__logo brand__logo--dark"
+            src="assets/img/Queensland_Government_logo_logotype_inverse.png"
+            alt="Queensland Government logo"
+          />
         </span>
-        <span class="brand__text">Learning in motion</span>
+        <span class="brand__text">Kindergarten Learning Progression Toolkit</span>
       </a>
 
       <div class="nav-cluster">

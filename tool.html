@@ -15,21 +15,114 @@
   </head>
   <body data-page="tool">
     <div class="site-shell">
-      <header class="site-header section">
+      <header class="site-header hero">
         <div data-component="header"></div>
-        <section class="page-hero">
-          <div class="section-heading">
-            <p class="eyebrow">KLPT Tool</p>
-            <h1>Give the demos a dedicated page with context, pathways, and supporting videos.</h1>
+        <section class="hero__content page-hero page-hero--home">
+          <div class="hero__copy">
+            <h1>Using the KLPT</h1>
+            <p class="hero__lede">
+              The KLPT site is designed to help first-time users understand the tool, the learning
+              domains, and the supporting resources, while still letting repeat users navigate
+              straight to the observation support content they need.
+            </p>
+            <div class="hero__actions">
+              <a class="button button--primary" href="#tool-overview">Go to the Tool</a>
+              <a class="button button--ghost" href="learning-domains.html">Browse Learning Domains</a>
+            </div>
           </div>
-          <p class="page-hero__lede">
-            The tool page can be the bridge between abstract explanation and concrete practice,
-            helping visitors understand what the demos do and why they matter.
-          </p>
+
+          <aside class="hero__panel" aria-label="Using the KLPT video">
+            <div class="highlight-card">
+              <span class="highlight-card__label">Getting Started</span>
+              <h2>Watch the introduction to using the KLPT</h2>
+              <p>
+                A styled video block can lead first-time users into the tool and help them
+                understand the learning-domain structure before they choose where to go next.
+              </p>
+            </div>
+            <div class="video-embed video-embed--hero">
+              <iframe
+                src="https://www.youtube.com/embed/4ec7okyzRE4"
+                title="Using the KLPT video"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <a class="inline-link" href="transcript.html">Read the transcript</a>
+          </aside>
         </section>
       </header>
 
       <main>
+        <section class="section" id="tool-overview">
+          <div class="domain-panel-grid">
+            <article class="domain-panel domain-panel--language">
+              <img class="domain-panel__art" src="assets/img/domain-language-literacy.svg" alt="Language and Literacy illustration" />
+              <h3>Language and Literacy</h3>
+              <p>Communication, expression, comprehension, and language-rich learning experiences.</p>
+              <a href="language-literacy.html">Open page</a>
+            </article>
+            <article class="domain-panel domain-panel--executive">
+              <img class="domain-panel__art" src="assets/img/domain-executive-function.svg" alt="Executive Function illustration" />
+              <h3>Executive Function</h3>
+              <p>Planning, focus, organisation, and the routines that support self-regulation.</p>
+              <a href="executive-function.html">Open page</a>
+            </article>
+            <article class="domain-panel domain-panel--social">
+              <img class="domain-panel__art" src="assets/img/domain-social-emotional-learning.svg" alt="Social and Emotional Learning illustration" />
+              <h3>Social and Emotional Learning</h3>
+              <p>Relationships, self-awareness, emotions, and the interpersonal side of learning.</p>
+              <a href="social-emotional-learning.html">Open page</a>
+            </article>
+            <article class="domain-panel domain-panel--physical">
+              <img class="domain-panel__art" src="assets/img/domain-physicality.svg" alt="Physicality illustration" />
+              <h3>Physicality</h3>
+              <p>Movement, coordination, physical confidence, and the embodied aspects of learning.</p>
+              <a href="physicality.html">Open page</a>
+            </article>
+            <article class="domain-panel domain-panel--maths">
+              <img class="domain-panel__art" src="assets/img/domain-mathematics-numeracy.svg" alt="Mathematics and Numeracy illustration" />
+              <h3>Mathematics and Numeracy</h3>
+              <p>Patterns, number sense, problem solving, and early mathematical understanding.</p>
+              <a href="mathematics-numeracy.html">Open page</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section--alt">
+          <div class="section-heading">
+            <p class="eyebrow">Find Out More</p>
+            <h2>Additional practical links for users who need more detail.</h2>
+          </div>
+          <div class="content-grid">
+            <article class="feature-card">
+              <span class="pill">More</span>
+              <h3>Development</h3>
+              <p>Explain the developmental thinking and structure that sits behind the KLPT.</p>
+              <a href="development.html">Open development page</a>
+            </article>
+            <article class="feature-card">
+              <span class="pill">More</span>
+              <h3>Progressions</h3>
+              <p>Show how progress can be understood over time and how the platform supports that view.</p>
+              <a href="progressions.html">Open progressions page</a>
+            </article>
+            <article class="feature-card">
+              <span class="pill">More</span>
+              <h3>FAQ</h3>
+              <p>Answer common questions from educators, families, and first-time users.</p>
+              <a href="faq.html">Open FAQs</a>
+            </article>
+            <article class="feature-card">
+              <span class="pill">More</span>
+              <h3>Contact Us</h3>
+              <p>Provide a clear way for visitors to reach out when they need support or clarification.</p>
+              <a href="contact.html">Open contact page</a>
+            </article>
+          </div>
+        </section>
+
         <section class="section">
           <div class="tool-showcase">
             <div class="tool-showcase__visual">
